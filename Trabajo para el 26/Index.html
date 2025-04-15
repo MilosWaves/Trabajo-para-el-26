@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artesanías Neon- MILOSWAVES</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cyber-grid">
+        <div class="cyber-line"></div>
+        <div class="cyber-line"></div>
+        <div class="cyber-line"></div>
+        
+        <header class="cyber-header">
+            <h1 class="cyber-glitch" data-text="ARTESANÍAS MILOSWAVES">ARTESANÍAS MILOSWAVES</h1>
+            <p class="cyber-subtitle">PRODUCTOS HECHOS A MANO EN LA ERA DIGITAL</p>
+            <div class="cyber-pulse"></div>
+        </header>
+        
+        <nav class="cyber-nav">
+            <ul>
+                <li><a href="#jabones" class="cyber-link"><span class="cyber-hover">JABONES</span></a></li>
+                <li><a href="#velas" class="cyber-link"><span class="cyber-hover">VELAS</span></a></li>
+                <li><a href="#ceramica" class="cyber-link"><span class="cyber-hover">CERÁMICA</span></a></li>
+            </ul>
+            <div class="cyber-nav-decoration"></div>
+        </nav>
+        
+        <main class="cyber-main">
+            <section id="jabones" class="cyber-section">
+                <h2 class="cyber-title"><span class="cyber-accent">></span> JABONES <span class="cyber-accent"><</span></h2>
+                <div class="cyber-product">
+                    <img src="images/jabones-neon.jpg" alt="Jabones artesanales" class="cyber-image">
+                    <div class="cyber-data">
+                        <div class="cyber-benefit">
+                            <h3 class="cyber-benefit-title">>> BENEFICIOS PARA LA PIEL</h3>
+                            <ul class="cyber-list">
+                                <li><span class="cyber-code">></span> Hidratación orgánica</li>
+                                <li><span class="cyber-code">></span> Exfoliación con micro-partículas de silicio</li>
+                                <li><span class="cyber-code">></span> Protección contra toxinas</li>
+                            </ul>
+                        </div>
+                        <div class="cyber-benefit">
+                            <h3 class="cyber-benefit-title">>> VENTAJAS</h3>
+                            <ul class="cyber-list">
+                                <li><span class="cyber-code">></span> Formula 100% libre de corporativos</li>
+                                <li><span class="cyber-code">></span> Compatible con implantes dérmicos</li>
+                                <li><span class="cyber-code">></span> Aromas de distopía controlada</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="velas" class="cyber-section">
+                <h2 class="cyber-title"><span class="cyber-accent">></span> VELAS <span class="cyber-accent"><</span></h2>
+                <div class="cyber-product">
+                    <img src="images/velas-neon.jpg" alt="Velas artesanales" class="cyber-image">
+                    <div class="cyber-data">
+                        <div class="cyber-benefit">
+                            <h3 class="cyber-benefit-title">>> CARACTERÍSTICAS</h3>
+                            <ul class="cyber-list">
+                                <li><span class="cyber-code">></span> Cera de soja modificada</li>
+                                <li><span class="cyber-code">></span> Mechas de fibra de baja intensidad</li>
+                                <li><span class="cyber-code">></span> Duración estimada: 200 horas</li>
+                            </ul>
+                        </div>
+                        <div class="cyber-benefit">
+                            <h3 class="cyber-benefit-title">>> EFECTOS</h3>
+                            <ul class="cyber-list">
+                                <li><span class="cyber-code">></span> Aromas de Sakura</li>
+                                <li><span class="cyber-code">></span> Iluminación ambiente </li>
+                                <li><span class="cyber-code">></span> Modo Natural incluido</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="ceramica" class="cyber-section">
+                <h2 class="cyber-title"><span class="cyber-accent">></span> CERÁMICA <span class="cyber-accent"><</span></h2>
+                <div class="cyber-product">
+                    <img src="images/ceramica-neon.jpg" alt="Cerámica artesanal" class="cyber-image">
+                    <div class="cyber-data">
+                        <div class="cyber-benefit">
+                            <h3 class="cyber-benefit-title">>> ESPECIFICACIONES</h3>
+                            <ul class="cyber-list">
+                                <li><span class="cyber-code">></span> Arcilla reforzada</li>
+                                <li><span class="cyber-code">></span> Esmaltes conductivos no tóxicos</li>
+                            </ul>
+                        </div>
+                        <div class="cyber-benefit">
+                            <h3 class="cyber-benefit-title">>> USOS AVANZADOS</h3>
+                            <ul class="cyber-list">
+                                <li><span class="cyber-code">></span> Almacenamiento</li>
+                                <li><span class="cyber-code">></span> Impermiable </li>
+                                <li><span class="cyber-code">></span> Autoreparación limitada</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="cyber-footer">
+            <div class="cyber-signal"></div>
+            <p class="cyber-copyright">© 2077 ARTESANÍAS MILOSWAVES | BRO ESTO TIENE COPYRIGHT (NO TE COPIES).</p>
+            <div class="cyber-barcode"></div>
+        </footer>
+    </div>
+    
+    <script>
+        setInterval(() => {
+            const glitch = document.querySelector('.cyber-glitch');
+            if(Math.random() > 0.7) {
+                glitch.classList.add('glitch-active');
+                setTimeout(() => glitch.classList.remove('glitch-active'), 200);
+            }
+        }, 5000);
+        
+        document.querySelectorAll('.cyber-title').forEach(title => {
+            const text = title.innerText;
+            title.innerHTML = '';
+            let i = 0;
+            const typing = setInterval(() => {
+                if(i < text.length) {
+                    title.innerHTML += text.charAt(i);
+                    i++;
+                } else {
+                    clearInterval(typing);
+                }
+            }, 50);
+        });
+    </script>
+</body>
+</html>
